@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Background Colors */
+    --bg-primary-color: rgb(22, 21, 21);
+    --bg-fill-color: #d56a6a;
+    --bg-food-color: #b32424;
+
+    /* Text Colors */
+    --text-primary-color: white;
+
+    /* Spacing Variables */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 40px;
+    --space-3xl: 48px;
+
+    /* Border Colors */
+    --border-primary-color: #333333;
+
+    /* Border Radius */
+    --border-radius-xs: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 20px;
+    --border-radius-xl: 28px;
+
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main,
+section{
+    height: 100%;
+    width: 100%;
+}
+section{
+    padding: var(--space-2xl);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+section .infos{
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    padding: var(--space-sm) var(--space-md);
+    border: 3px solid var(--border-primary-color);
+    border-radius: var(--border-radius-sm);
+}
+.board{
+    border: 2px solid var(--border-primary-color);
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+    overflow: hidden;
+}
+.block{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-primary-color);
+    border-radius: 30%;
+}
+.fill{
+    background-color: var(--bg-fill-color);
+}
+.food{
+    background-color: var(--bg-food-color);
+}
+.modal{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #35353587;
+    backdrop-filter: blur(6px);;
+}
+.modal .start-game, .modal .game-over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    padding: var(--space-md) var(--space-lg);
+    margin: var(--space-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    transition: all ease 0.3s;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.modal .game-over{
+    display: none;
+}
