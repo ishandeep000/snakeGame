@@ -16,13 +16,13 @@ The game includes score tracking, high score storage, and a timer.
 ---
 
 ## 📂 Project Structure
+```
 snake-game/
-│── index.html
-│── style.css
-│── script.js
-
+├── index.html
+├── style.css
+├── script.js
+```
 ---
-## 📸 Preview
 
 ## 📸 Preview
 
