@@ -22,7 +22,11 @@ snake-game/
 │── script.js
 
 ---
+## 📸 Preview
 
+image.png
+
+---
 ## 🧠 How It Works
 
 - The game board is dynamically created using JavaScript.
