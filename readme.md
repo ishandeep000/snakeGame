@@ -68,4 +68,4 @@ Example from HTML structure:
 
 ## 👨‍💻 Author
 
-Your Name
+Ishandeep Singh
