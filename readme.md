@@ -24,7 +24,9 @@ snake-game/
 ---
 ## 📸 Preview
 
-image.png
+## 📸 Preview
+
+![Snake Game](image.png)
 
 ---
 ## 🧠 How It Works
